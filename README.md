@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Yoga Class Enrollment System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based enrollment system for yoga classes. It is designed to allow users to sign up for classes, select their desired batch, and manage their monthly enrollments.
 
-## Available Scripts
+## Approach
 
-In the project directory, you can run:
+The system is split into two main components:
 
-### `npm start`
+- **Frontend**: Developed using React, the frontend provides a user-friendly interface for students to enter their details and enroll in yoga classes. The UI is designed to be simple and intuitive, utilizing React state to manage form data and Axios for making API calls to the backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Backend**: The backend is a Node.js application built with the Express framework. It is responsible for handling HTTP requests, performing basic input validation, and interacting with a SQLite database for persistent storage of enrollment data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Key Features
 
-### `npm test`
+- Age validation to ensure only users between 18 to 65 can enroll.
+- Month-to-month payment functionality, with users able to pay at any time during the month.
+- Flexible batch selection, allowing users to choose from 4 different time slots.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Libraries/Frameworks Used
 
-### `npm run build`
+- **React**: For building the dynamic frontend.
+- **Axios**: For making HTTP requests from the frontend.
+- **Node.js/Express**: For creating the backend server.
+- **SQLite**: For the database to store enrollment details.
+- **Cors**: To enable CORS for the Express server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Assumptions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+During development, the following assumptions were made:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Users will pay for the entire month, regardless of when they enroll within the month.
+- There is no requirement for user authentication in the current scope.
+- The payment process is mocked and assumed to be successful for all transactions.
 
-### `npm run eject`
+## Database Schema (ER Diagram)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The database consists of two tables:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Students**: To store student details.
+- **Enrollments**: To store information about the class batches that students enroll in.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The ER diagram can be found in the project directory under `path/to/er-diagram.png`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Setup and Installation
 
-## Learn More
+1. Clone the repository.
+2. Navigate to the project directory and run `npm install` to install dependencies for both frontend and backend.
+3. Start the backend server with `node backend/server.js` or `nodemon backend/server.js`.
+4. Start the frontend application with `npm start` within the root directory.
+5. Open `http://localhost:3000` in a browser to view the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For detailed instructions, refer to the `SETUP.md` file in the repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Yoga instructors who provided insights into the class scheduling.
+- All contributors who have submitted pull requests or opened issues.
+- The open-source community for the myriad of tools that made this project possible.
