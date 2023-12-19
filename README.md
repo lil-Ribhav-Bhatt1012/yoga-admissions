@@ -40,7 +40,8 @@ The database consists of two tables:
 
 - **Students**: To store student details.
 - **Enrollments**: To store information about the class batches that students enroll in.
-<img width="1318" alt="ER" src="https://github.com/lil-Ribhav-Bhatt1012/yoga-admissions/assets/77582313/001a54c4-8efd-4d47-851a-43dda3bb428f">
+<img width="1274" alt="ER" src="https://github.com/lil-Ribhav-Bhatt1012/yoga-admissions/assets/77582313/dc96b8b1-1cba-4904-bbc2-1af687fed03d">
+
 
 
 ## Setup and Installation
