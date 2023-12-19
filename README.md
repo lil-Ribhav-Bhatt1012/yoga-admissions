@@ -2,6 +2,8 @@
 
 This project is a web-based enrollment system for yoga classes. It is designed to allow users to sign up for classes, select their desired batch, and manage their monthly enrollments.
 
+Live link: https://yoga-admissions.netlify.app/
+
 ## Approach
 
 The system is split into two main components:
