@@ -38,8 +38,8 @@ The database consists of two tables:
 
 - **Students**: To store student details.
 - **Enrollments**: To store information about the class batches that students enroll in.
+<img width="1318" alt="ER" src="https://github.com/lil-Ribhav-Bhatt1012/yoga-admissions/assets/77582313/001a54c4-8efd-4d47-851a-43dda3bb428f">
 
-The ER diagram can be found in the project directory under `path/to/er-diagram.png`.
 
 ## Setup and Installation
 
@@ -64,3 +64,4 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 - Yoga instructors who provided insights into the class scheduling.
 - All contributors who have submitted pull requests or opened issues.
 - The open-source community for the myriad of tools that made this project possible.
+<img width="1680" alt="yoga" src="https://github.com/lil-Ribhav-Bhatt1012/yoga-admissions/assets/77582313/e3af0231-23a4-4581-9701-6e48d7bf064a">
